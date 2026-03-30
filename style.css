@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.left{
+    
+    width: 25vw;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.right{
+    width: 75vw;
+}
+.home ul li{
+     display: flex;
+     width: 15px;
+     gap: 10px;
+     list-style: none;
+     padding:14px 0px 0px 0px;
+}
+
+.bg-black{
+    background-color: black;
+    color: white;
+}
+.invert{
+    filter: invert(1);
+}
+.bg-grey{
+    background-color: #121212;
+}
+.rounded{
+    border-radius: 7px;
+}
+.m-1{
+    margin: 5px;
+}
+.p-1{
+    padding: 20px;
+}
+.heading{
+     display: flex;
+     width: 15px;
+     gap: 10px;
+     list-style: none;
+     width: 100%;
+     padding:14px 0px 0px 0px;
+}
+.heading img{
+    width: 30px ;
+    height: 30px;
+}
+.library{
+    min-height: 69vh;
+    position: relative;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    font-size: 10px;
+    color: grey;
+    gap: 8px;
+}
+.footer a{
+    color: grey;
+}
+.header{
+    border-top-left-radius:7px ;
+    border-top-right-radius: 7px;
+    padding:16px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(34 ,34,34);
+}
+.spotifyplaylist{
+    padding: 28px;
+}
