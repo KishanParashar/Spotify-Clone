@@ -4,35 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify</title>
+    <title>Spotify - Web Player: Music for everyone</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utility.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
     <div class="container flex bg-black">
-        <div class="left ">
-            <div class="home bg-grey rounded m-1 p-1">
-                <div class="logo invert"><img src="logo.svg" alt=""></div>
+        <div class="left m-1">
+            <div class="close1">
+            <img width="25px" src="img/cross.svg" alt="">
+            </div>
+            
+            <div class="home bg-grey rounded  p-1">
+                <div class="logo invert"><img src="img/logo.svg" alt=""></div>
                 <ul>
 
-                    <li><img src="home.svg" alt="home" class="invert">Home</li>
-                    <li> <img src="search.svg" alt="search" class="invert">Search</li>
+                    <li><img src="img/home.svg" alt="home" class="invert">Home</li>
+                    <li> <img src="img/search.svg" alt="search" class="invert">Search</li>
                 </ul>
             </div>
 
 
 
-            <div class="library bg-grey rounded m-1 p-1">
+            <div class="library bg-grey rounded  p-1">
+                <div class="bordering">
                 <div class="heading">
-                    <img src="library.png" alt="" class="invert">
+                    <img src="img/library.png" alt="" class="invert">
 
                     <h2>
                         Library
                     </h2>
 
                 </div>
-
+                <div class="songlist">
+                    <ul>
+                        
+                    </ul>
+                </div>
+               </div>
                 <div class="footer">
 
                     <div>
@@ -78,8 +89,10 @@
 
 
         </div>
-        <div class="right  border bg-grey rounded m-1 ">
+        <div class="right bg-grey rounded ">
             <div class="header ">
+                <img width="25px" src="img/hamburger.svg" alt="" class="hamburger">
+                <div class="tosepratehamburger">
                 <div class="nav">
 
                     <?xml version="1.0" encoding="iso-8859-1"?>
@@ -115,26 +128,46 @@
 
                 <div class="button">
 
-                    <button>Signup</button>
-                    <button>Login</button>
+                    <button class="signupbtn">Sign Up</button>
+                    <button class="loginbtn">Log in</button>
 
+                </div>
                 </div>
 
             </div>
             <div class="spotifyplaylist">
                 <h1>Spotify Playlists</h1>
                 <div class="cardcontainer">
-                    <div class="card">
-                        <img src="" alt="">
-                        <h2>Jaiye Sajana</h2>
-                        <p>Shashwat Sachdev</p>
-                        <p>Jasmine Sandlas</p>
+                    
                     </div>
+                   
+                    </div>
+                    
+                    
+                  
+            <div class="playbar">
+                <div class="seekbar">
+                    <div class="circle">
+                        
+                    </div>
+                </div>
+                <div class="abovebar">
+                <div class="songinfo">
+                    
+                </div>
+                <div class="songbuttons">
+                    <img id="prev" src="img/prev.svg" alt="">
+                    <img id="play" src="img/play.svg" alt="">
+                    <img id="next" src="img/forward.svg" alt="">
+                </div>
+                <div class="songtime">
+
+                </div>
                 </div>
             </div>
         </div>
     </div>
-
+<script src="script.js"></script>
 </body>
 
 </html>
